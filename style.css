@@ -1,0 +1,81 @@
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --text-pry-white: #fff;
+    
+
+    --btn-pry-yellow: #ffb703;
+    --btn-text-dkblue: #264653;
+
+    --border-radius: 5px;
+}
+
+body {
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    color: var(--text-pry-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Mukta', sans-serif;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.game-panel {
+    text-align: center;
+}
+
+.message {
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+.info {
+    font-size: 1.3rem;
+}
+
+.top-panel {
+    display: flex;
+}
+
+.player, 
+.dealer {
+    border:1px solid red;
+    flex-basis: 100%;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    /* padding: 0.6em 1.5em; */
+    width: 10rem;
+    height: 3rem;
+    border-radius: var(--border-radius);
+    border: none;
+    cursor: pointer;
+    background: var(--btn-pry-yellow);
+    color: var(--btn-text-dkblue);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn~.btn{
+    margin-top: 1rem;
+}
+
